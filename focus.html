@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Focus Timer</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Focus Timer</h1>
+        <form id="timer-form" class="timer-form">
+            <div class="input-group">
+                <input type="number" id="minutes" placeholder="Minutes" required>
+                <span>:</span>
+                <input type="number" id="seconds" placeholder="Seconds" required>
+            </div>
+            <button type="submit" class="btn">Start Timer</button>
+        </form>
+        <div id="timer-display" class="timer-display">00:00</div>
+        <div id="progress-bar" class="progress-bar">
+            <div id="progress-bar-fill" class="progress-bar-fill"></div>
+        </div>
+        <div class="buttons">
+            <button id="pause-button" class="btn" disabled>Pause</button>
+            <button id="resume-button" class="btn" disabled>Resume</button>
+        </div>
+    </div>
+    <audio id="alarm-sound" src="alarm.mp3"></audio>
+    <script src="script2.js"></script>
+</body>
+</html>

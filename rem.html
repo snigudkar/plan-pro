@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reminder Website</title>
+    <link rel="stylesheet" href="rem.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Set a Reminder</h1>
+        <form id="reminder-form">
+            <input type="text" id="reminder-text" placeholder="Enter your reminder" required>
+            <input type="datetime-local" id="reminder-time" required>
+            <button type="submit">Set Reminder</button>
+        </form>
+        <div id="reminder-list"></div>
+    </div>
+    <script src="rem.js"></script>
+</body>
+</html>

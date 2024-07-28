@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Planner</title>
+    <link rel="stylesheet" href="p_css.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Planner App</h1>
+        <div class="row">
+            <div id="notes" class="section half">
+                <h2>Notes</h2>
+                <textarea id="notes-text" placeholder="Write your notes here..."></textarea>
+                <button onclick="saveNotes()">Save Notes</button>
+            </div>
+            <div id="todo" class="section half">
+                <h2>To-Do List</h2>
+                <input type="text" id="todo-input" placeholder="Add a new task">
+                <button onclick="addTodo()">Add</button>
+                <ul id="todo-list"></ul>
+            </div>
+        </div>
+        <div class="row">
+            <div id="water" class="section half">
+                <h2>Water Tracker</h2>
+                <p>Number of glasses of water today:</p>
+                <input type="number" id="water-input" min="0">
+                <button onclick="trackWater()">Track Water</button>
+                <p id="water-count">0 glasses</p>
+            </div>
+            <div id="mood" class="section half">
+                <h2>Mood Tracker</h2>
+                <label for="mood-select">How are you feeling today?</label>
+                <select id="mood-select">
+                    <option value="happy">Happy</option>
+                    <option value="sad">Sad</option>
+                    <option value="angry">Angry</option>
+                    <option value="excited">Excited</option>
+                    <option value="neutral">Neutral</option>
+                </select>
+                <button onclick="trackMood()">Track Mood</button>
+                <p id="mood-display"></p>
+            </div>
+        </div>
+    </div>
+    <script src="p_js.js"></script>
+</body>
+</html>
